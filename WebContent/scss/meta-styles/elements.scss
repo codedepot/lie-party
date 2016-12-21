@@ -1,0 +1,195 @@
+.btn-yellow,.btn-yellow-thin {
+  background-color:$sunshine;
+  color:black;
+  padding: 10px 20px;
+  border-radius:0;
+  &:hover{
+    font-weight:bold;
+  }
+}
+input.inp-flat{
+  height:42px;
+  width:100%;
+}
+
+
+#homepage-join-room, #homepage-make-room{
+  input{
+    height:42px;
+    width:100%;
+    margin-bottom:20px;
+    padding-left:5px
+  }
+  button{
+    width:100%;
+  }
+}
+.content-header{
+  color:white;
+  text-align: center;
+  font-size:32px;
+}
+.playerList{
+  margin-bottom: 30px;
+  .playerName{
+    padding:20px 40px;
+    font-size:20px;
+    border:5px solid $clean;
+    background-color: $clean-50;
+    border-radius:5px;
+    text-align: center;
+  }
+}
+
+.question-row{
+  margin-top:20px;
+  margin-bottom: 30px;
+  >div{
+    text-align:center;
+    font-size:22px;
+    color:white;
+  }
+}
+
+//style for options which users pick
+.suggestion-section, .answer-section, .answer-results{
+  text-align: center;
+  margin-bottom: 10px;
+  //answer page to display link button
+  .answer-item-container{
+    position:relative;
+    display: inline-block;
+    transition: 1s ease-in-out;
+    //for answer selection screen
+    .like-btn{
+      position: absolute;
+      right: -3px;
+      top: -7px;
+      padding: 10px;
+      background: $clean;
+      border-radius: 20px;
+      color: black;
+      &:hover{
+        transform: scale(1.1);
+      }
+    }
+    //for results page, the people who voted for answer
+    .voter-name{
+      height:40px;
+      background: black;
+      border-radius: 3px;
+      color: white;
+      overflow: hidden;
+
+      &+.voter-name{
+        border-top: 2px solid white;
+      }
+      span{
+        padding: 10px;
+        display: block;
+      }
+    }
+    //for results page, the people who voted for answer
+    .answer-author{
+      height:40px;
+      background: white;
+      border-radius: 3px;
+      color: black;
+      overflow: hidden;
+
+      &+.voter-name{
+        border-top: 2px solid white;
+      }
+      span{
+        padding: 10px;
+        display: block;
+      }
+    }
+  }
+  .item{
+    display:inline-block;
+    text-align: center;
+    padding:20px;
+    margin: 10px 15px;
+    font-size:16px;
+    background:$sunshine;
+    color:$clean;
+    border-radius: 5px;
+    &, &:hover, &:focus, &:active{
+      color:black;
+      text-decoration: none;
+    }
+    &:hover{
+      transform: scale(1.1);
+    }
+  }
+  &.answer-results .item{
+    margin:0;
+    display:block;
+  }
+}
+
+.progress{
+  height:40px;
+  .progress-bar{
+    background-color: $sunshine;
+    line-height: 40px;
+    font-size:20px;
+    color:black;
+    font-weight:700;
+  }
+}
+
+#feedback-section{
+  font-size:20px;
+  color:white;
+  text-align: center;
+  padding-top: 30px;
+}
+
+
+#game-results{
+  width:100%;
+  margin-top: 30px;
+
+  thead{
+    border-bottom: 5px solid $alt-green;
+
+    th{
+      text-align: center;
+      color:white;
+      font-weight: normal;
+      padding: 5px;
+      &:nth-child(1){width:68%;}
+      &:nth-child(2){width:16%;}
+      &:nth-child(3){width:16%;}
+    }
+  }
+  tbody{
+    tr{
+      border-bottom: 2px solid $alt-green;
+    }
+    td span{
+      padding:15px 0px;
+      font-size:20px;
+
+      text-align: center;
+      display: block;
+      margin: 10px 20px;
+      font-weight: bold;
+      color:$grey;
+
+
+    }
+    td.resultsPlayerName span{
+
+      background-color: $clean-30;
+      border-radius:5px;
+      font-size: 24px;
+      color: black;
+    }
+    td:nth-child(2) span{
+      text-shadow: white 0px 0px 10px;
+    }
+  }
+}

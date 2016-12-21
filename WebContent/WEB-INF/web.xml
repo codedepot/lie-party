@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>Lie_Party</display-name>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>HomePageServlet</display-name>
+    <servlet-name>HomePageServlet</servlet-name>
+    <servlet-class>com.lie_party.controllers.HomePageServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HomePageServlet</servlet-name>
+    <url-pattern>/HomePageServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>RefreshServlet</display-name>
+    <servlet-name>RefreshServlet</servlet-name>
+    <servlet-class>com.lie_party.controllers.RefreshServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RefreshServlet</servlet-name>
+    <url-pattern>/RefreshServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>QuestionServlet</display-name>
+    <servlet-name>QuestionServlet</servlet-name>
+    <servlet-class>com.lie_party.controllers.QuestionServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>QuestionServlet</servlet-name>
+    <url-pattern>/QuestionServlet</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <description></description>
+    <display-name>RoundServlet</display-name>
+    <servlet-name>RoundServlet</servlet-name>
+    <servlet-class>com.lie_party.controllers.RoundServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RoundServlet</servlet-name>
+    <url-pattern>/RoundServlet</url-pattern>
+  </servlet-mapping>
+</web-app>

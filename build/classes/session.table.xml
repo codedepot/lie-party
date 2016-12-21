@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd"> 
+
+
+<hibernate-mapping>
+   
+   <class name="com.lie_party.UserSessions" table="USER_SESSIONS">
+      <meta attribute="class-description">
+         represents session and if they need to be refreshed. This is the user session, not the game session
+      </meta>
+      <id name="id" type="integer" column="ID">
+         <generator class="native"/>
+      </id>
+      <property name="hashCode" column="HASH_CODE" type="integer"/>
+      <property name="roomCode" column="ROOMCODE" type="string"/>
+      <property name="refresh" column="REFRESH" type="boolean"/>
+      <property name="redirect" column="REDIRECT" type="boolean"/>
+   </class>
+</hibernate-mapping>
+
+

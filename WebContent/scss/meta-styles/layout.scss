@@ -1,0 +1,66 @@
+.homepage{
+  background-color: $fresh;
+  .homepage-header{
+    border-top:5px solid $alt-green;
+    border-bottom:5px solid $alt-green;
+    margin-bottom: 30px;
+    color:white;
+    padding:30px;
+  }
+  .homepage-buttons {
+    margin-bottom: 30px;
+    button{
+      margin: 20px 0;
+      font-weight: 700;
+    }
+  }
+}
+
+nav.navbar{
+  background-color:$clean;
+  .players-dropdown .dropdown-menu li.players-dropdown-item{
+    padding: 3px 20px;
+  }
+  .header-status{
+
+    display: inline-block;
+    ul{
+      margin:0;
+      li{
+        padding: 15px 5px;
+      }
+    }
+  }
+}
+
+//footer styles
+footer{
+  background-color:$clean;
+  position: absolute;
+  bottom:0;
+  width:100%;
+  height:150px;
+}
+html{
+  position: relative;
+  min-height: 100%;
+}
+.container{
+  margin-bottom: 150px;
+}
+
+
+//screen specific styles
+@include screen-xs{
+  nav.navbar .header-status ul li{
+    padding: 15px 10px 15px 0;
+  }
+}
+
+@include screen-sm-up{
+  nav.navbar .header-status{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

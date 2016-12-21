@@ -1,0 +1,342 @@
+/* line 1, ../scss/meta-styles/layout.scss */
+.homepage {
+  background-color: #4abdac;
+}
+/* line 3, ../scss/meta-styles/layout.scss */
+.homepage .homepage-header {
+  border-top: 5px solid #2fa18e;
+  border-bottom: 5px solid #2fa18e;
+  margin-bottom: 30px;
+  color: white;
+  padding: 30px;
+}
+/* line 10, ../scss/meta-styles/layout.scss */
+.homepage .homepage-buttons {
+  margin-bottom: 30px;
+}
+/* line 12, ../scss/meta-styles/layout.scss */
+.homepage .homepage-buttons button {
+  margin: 20px 0;
+  font-weight: 700;
+}
+
+/* line 19, ../scss/meta-styles/layout.scss */
+nav.navbar {
+  background-color: #dfdce3;
+}
+/* line 21, ../scss/meta-styles/layout.scss */
+nav.navbar .players-dropdown .dropdown-menu li.players-dropdown-item {
+  padding: 3px 20px;
+}
+/* line 24, ../scss/meta-styles/layout.scss */
+nav.navbar .header-status {
+  display: inline-block;
+}
+/* line 27, ../scss/meta-styles/layout.scss */
+nav.navbar .header-status ul {
+  margin: 0;
+}
+/* line 29, ../scss/meta-styles/layout.scss */
+nav.navbar .header-status ul li {
+  padding: 15px 5px;
+}
+
+/* line 37, ../scss/meta-styles/layout.scss */
+footer {
+  background-color: #dfdce3;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 150px;
+}
+
+/* line 44, ../scss/meta-styles/layout.scss */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+/* line 48, ../scss/meta-styles/layout.scss */
+.container {
+  margin-bottom: 150px;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  /* line 55, ../scss/meta-styles/layout.scss */
+  nav.navbar .header-status ul li {
+    padding: 15px 10px 15px 0;
+  }
+}
+@media (min-width: 768px) {
+  /* line 61, ../scss/meta-styles/layout.scss */
+  nav.navbar .header-status {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+/* line 1, ../scss/meta-styles/elements.scss */
+.btn-yellow, .btn-yellow-thin {
+  background-color: #f7b733;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 0;
+}
+/* line 6, ../scss/meta-styles/elements.scss */
+.btn-yellow:hover, .btn-yellow-thin:hover {
+  font-weight: bold;
+}
+
+/* line 10, ../scss/meta-styles/elements.scss */
+input.inp-flat {
+  height: 42px;
+  width: 100%;
+}
+
+/* line 17, ../scss/meta-styles/elements.scss */
+#homepage-join-room input, #homepage-make-room input {
+  height: 42px;
+  width: 100%;
+  margin-bottom: 20px;
+  padding-left: 5px;
+}
+/* line 23, ../scss/meta-styles/elements.scss */
+#homepage-join-room button, #homepage-make-room button {
+  width: 100%;
+}
+
+/* line 27, ../scss/meta-styles/elements.scss */
+.content-header {
+  color: white;
+  text-align: center;
+  font-size: 32px;
+}
+
+/* line 32, ../scss/meta-styles/elements.scss */
+.playerList {
+  margin-bottom: 30px;
+}
+/* line 34, ../scss/meta-styles/elements.scss */
+.playerList .playerName {
+  padding: 20px 40px;
+  font-size: 20px;
+  border: 5px solid #dfdce3;
+  background-color: rgba(223, 220, 227, 0.5);
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* line 44, ../scss/meta-styles/elements.scss */
+.question-row {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+/* line 47, ../scss/meta-styles/elements.scss */
+.question-row > div {
+  text-align: center;
+  font-size: 22px;
+  color: white;
+}
+
+/* line 55, ../scss/meta-styles/elements.scss */
+.suggestion-section, .answer-section, .answer-results {
+  text-align: center;
+  margin-bottom: 10px;
+}
+/* line 59, ../scss/meta-styles/elements.scss */
+.suggestion-section .answer-item-container, .answer-section .answer-item-container, .answer-results .answer-item-container {
+  position: relative;
+  display: inline-block;
+  transition: 1s ease-in-out;
+}
+/* line 64, ../scss/meta-styles/elements.scss */
+.suggestion-section .answer-item-container .like-btn, .answer-section .answer-item-container .like-btn, .answer-results .answer-item-container .like-btn {
+  position: absolute;
+  right: -3px;
+  top: -7px;
+  padding: 10px;
+  background: #dfdce3;
+  border-radius: 20px;
+  color: black;
+}
+/* line 72, ../scss/meta-styles/elements.scss */
+.suggestion-section .answer-item-container .like-btn:hover, .answer-section .answer-item-container .like-btn:hover, .answer-results .answer-item-container .like-btn:hover {
+  transform: scale(1.1);
+}
+/* line 77, ../scss/meta-styles/elements.scss */
+.suggestion-section .answer-item-container .voter-name, .answer-section .answer-item-container .voter-name, .answer-results .answer-item-container .voter-name {
+  height: 40px;
+  background: black;
+  border-radius: 3px;
+  color: white;
+  overflow: hidden;
+}
+/* line 84, ../scss/meta-styles/elements.scss */
+.suggestion-section .answer-item-container .voter-name + .voter-name, .answer-section .answer-item-container .voter-name + .voter-name, .answer-results .answer-item-container .voter-name + .voter-name {
+  border-top: 2px solid white;
+}
+/* line 87, ../scss/meta-styles/elements.scss */
+.suggestion-section .answer-item-container .voter-name span, .answer-section .answer-item-container .voter-name span, .answer-results .answer-item-container .voter-name span {
+  padding: 10px;
+  display: block;
+}
+/* line 93, ../scss/meta-styles/elements.scss */
+.suggestion-section .answer-item-container .answer-author, .answer-section .answer-item-container .answer-author, .answer-results .answer-item-container .answer-author {
+  height: 40px;
+  background: white;
+  border-radius: 3px;
+  color: black;
+  overflow: hidden;
+}
+/* line 100, ../scss/meta-styles/elements.scss */
+.suggestion-section .answer-item-container .answer-author + .voter-name, .answer-section .answer-item-container .answer-author + .voter-name, .answer-results .answer-item-container .answer-author + .voter-name {
+  border-top: 2px solid white;
+}
+/* line 103, ../scss/meta-styles/elements.scss */
+.suggestion-section .answer-item-container .answer-author span, .answer-section .answer-item-container .answer-author span, .answer-results .answer-item-container .answer-author span {
+  padding: 10px;
+  display: block;
+}
+/* line 109, ../scss/meta-styles/elements.scss */
+.suggestion-section .item, .answer-section .item, .answer-results .item {
+  display: inline-block;
+  text-align: center;
+  padding: 20px;
+  margin: 10px 15px;
+  font-size: 16px;
+  background: #f7b733;
+  color: #dfdce3;
+  border-radius: 5px;
+}
+/* line 118, ../scss/meta-styles/elements.scss */
+.suggestion-section .item, .suggestion-section .item:hover, .suggestion-section .item:focus, .suggestion-section .item:active, .answer-section .item, .answer-section .item:hover, .answer-section .item:focus, .answer-section .item:active, .answer-results .item, .answer-results .item:hover, .answer-results .item:focus, .answer-results .item:active {
+  color: black;
+  text-decoration: none;
+}
+/* line 122, ../scss/meta-styles/elements.scss */
+.suggestion-section .item:hover, .answer-section .item:hover, .answer-results .item:hover {
+  transform: scale(1.1);
+}
+/* line 126, ../scss/meta-styles/elements.scss */
+.suggestion-section.answer-results .item, .answer-section.answer-results .item, .answer-results.answer-results .item {
+  margin: 0;
+  display: block;
+}
+
+/* line 132, ../scss/meta-styles/elements.scss */
+.progress {
+  height: 40px;
+}
+/* line 134, ../scss/meta-styles/elements.scss */
+.progress .progress-bar {
+  background-color: #f7b733;
+  line-height: 40px;
+  font-size: 20px;
+  color: black;
+  font-weight: 700;
+}
+
+/* line 143, ../scss/meta-styles/elements.scss */
+#feedback-section {
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  padding-top: 30px;
+}
+
+/* line 151, ../scss/meta-styles/elements.scss */
+#game-results {
+  width: 100%;
+  margin-top: 30px;
+}
+/* line 155, ../scss/meta-styles/elements.scss */
+#game-results thead {
+  border-bottom: 5px solid #2fa18e;
+}
+/* line 158, ../scss/meta-styles/elements.scss */
+#game-results thead th {
+  text-align: center;
+  color: white;
+  font-weight: normal;
+  padding: 5px;
+}
+/* line 163, ../scss/meta-styles/elements.scss */
+#game-results thead th:nth-child(1) {
+  width: 68%;
+}
+/* line 164, ../scss/meta-styles/elements.scss */
+#game-results thead th:nth-child(2) {
+  width: 16%;
+}
+/* line 165, ../scss/meta-styles/elements.scss */
+#game-results thead th:nth-child(3) {
+  width: 16%;
+}
+/* line 169, ../scss/meta-styles/elements.scss */
+#game-results tbody tr {
+  border-bottom: 2px solid #2fa18e;
+}
+/* line 172, ../scss/meta-styles/elements.scss */
+#game-results tbody td span {
+  padding: 15px 0px;
+  font-size: 20px;
+  text-align: center;
+  display: block;
+  margin: 10px 20px;
+  font-weight: bold;
+  color: #757575;
+}
+/* line 184, ../scss/meta-styles/elements.scss */
+#game-results tbody td.resultsPlayerName span {
+  background-color: rgba(223, 220, 227, 0.3);
+  border-radius: 5px;
+  font-size: 24px;
+  color: black;
+}
+/* line 191, ../scss/meta-styles/elements.scss */
+#game-results tbody td:nth-child(2) span {
+  text-shadow: white 0px 0px 10px;
+}
+
+/* line 1, ../scss/meta-styles/modular-classes.scss */
+.fill-width {
+  width: 100%;
+}
+
+/* line 4, ../scss/meta-styles/modular-classes.scss */
+.color-white {
+  color: white;
+}
+
+/* line 8, ../scss/meta-styles/modular-classes.scss */
+.no-margin {
+  margin: 0;
+}
+
+/* line 12, ../scss/meta-styles/modular-classes.scss */
+.mar-top-30 {
+  margin-top: 30px;
+}
+
+/* line 16, ../scss/meta-styles/modular-classes.scss */
+.mar-bottom-30 {
+  margin-bottom: 30px;
+}
+
+/* Hover Style for all the items: blur, scale down*/
+/* line 21, ../scss/meta-styles/modular-classes.scss */
+.blur {
+  box-shadow: 0px 0px 20px 10px #4abdac;
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -o-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  transform: scale(0.9);
+  opacity: 0.7;
+}
+/* line 29, ../scss/meta-styles/modular-classes.scss */
+.blur * {
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.9);
+  color: rgba(0, 0, 0, 0);
+  opacity: 0.5;
+}

@@ -1,0 +1,38 @@
+//screen size specs
+$screen-xs: 320px;
+$screen-sm: 768px;
+$screen-md: 1025px;
+$screen-lg: 1281px;
+
+
+
+//defining mixins
+@mixin screen-xs {
+  @media (min-width: #{$screen-xs}) and (max-width: #{$screen-sm - 1px}){
+    @content;
+  }
+}
+
+@mixin screen-sm {
+  @media (min-width: #{$screen-sm}) and (max-width: #{$screen-md - 1px}){
+    @content;
+  }
+}
+
+@mixin screen-md {
+  @media (min-width: #{$screen-md}) and (max-width: #{$screen-lg - 1px}){
+    @content;
+  }
+}
+
+@mixin screen-lg {
+  @media (min-width: #{$screen-lg}) {
+    @content;
+  }
+}
+
+@mixin screen-sm-up{
+  @media (min-width: #{$screen-sm}){
+    @content;
+  }
+}
